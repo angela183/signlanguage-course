@@ -1,0 +1,16 @@
+title: Signlanguage
+description: Learnign the language of  the deaf
+template:
+  repo: signlanguage-template
+  name: signlanguage
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
